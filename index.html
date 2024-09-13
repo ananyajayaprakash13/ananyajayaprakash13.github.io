@@ -3,65 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ananya Jayaprakash - Portfolio</title>
+    <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            text-align: center;
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
         }
-        h2 {
-            color: #4CAF50;
+        h1, h2 {
+            color: #333;
         }
         .project {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
-        .project a {
-            color: #007BFF;
-            text-decoration: none;
+        .pdf-container {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
         }
-        .project a:hover {
-            text-decoration: underline;
-        }
-        iframe, embed {
-            display: block;
-            margin: 10px auto;
-            border: 1px solid #ccc;
+        .pdf-container embed {
+            width: 100%;
+            height: 600px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>My Portfolio</h1>
 
-    <h1>Ananya Jayaprakash - Data Science Projects</h1>
+        <div class="project">
+            <h2>Netflix Business Case Study</h2>
+            <div class="pdf-container">
+                <embed src="netflix business case - Colab.pdf" type="application/pdf" />
+            </div>
+        </div>
 
-    <div class="project">
-        <h2>Netflix Business Case Study</h2>
-        <embed src="netflix business case - Colab.pdf" width="600" height="500" type="application/pdf">
+        <div class="project">
+            <h2>Yulu Hypothesis Testing</h2>
+            <div class="pdf-container">
+                <embed src="Yulu - Hypothesis testing - Colab.pdf" type="application/pdf" />
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Walmart Business Case</h2>
+            <div class="pdf-container">
+                <embed src="walmart case study - Colab.pdf" type="application/pdf" />
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Aerofit Case Study</h2>
+            <div class="pdf-container">
+                <embed src="Aerofit business case study - Colab.pdf" type="application/pdf" />
+            </div>
+        </div>
+
     </div>
-
-    <div class="project">
-        <h2>Aerofit - Descriptive Statistics & Probability</h2>
-        <a href="https://colab.research.google.com/drive/1W-webNxkfKnYvYIbG2Vqng5KmNVFQPji?usp=sharing" target="_blank">
-            View Aerofit Project on Colab
-        </a>
-    </div>
-
-    <div class="project">
-        <h2>Walmart - Confidence Interval and CLT</h2>
-        <a href="https://colab.research.google.com/drive/1BQlrFzw5BADEKOGZuyto6aIrDR9zns93?usp=sharing" target="_blank">
-            View Walmart Project on Colab
-        </a>
-    </div>
-
-    <div class="project">
-        <h2>Yulu - Hypothesis Testing</h2>
-        <a href="https://colab.research.google.com/drive/1teh-5anzc9vdsEVSIZXaNuP4aQ-dEfjP?usp=sharing" target="_blank">
-            View Yulu Project on Colab
-        </a>
-    </div>
-
 </body>
 </html>
+
 
